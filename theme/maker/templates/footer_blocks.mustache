@@ -1,0 +1,19 @@
+{{# usefooterblocks }}
+
+<div class="footer-blocks">
+	<div class="row">
+		
+		{{# footerblocks }}
+		{{# hasblock }}
+		<div class="footer-block footer-block-links col-6 col-md-6 col-lg-3">
+            {{{ blockcontent }}}
+		</div><!--//footer-block-->
+		{{/ hasblock }}
+		{{/ footerblocks }}
+		
+	</div><!--//row-->
+</div><!--//footer-blocks-->
+
+<div class="footer-divider"></div>
+
+{{/ usefooterblocks }}

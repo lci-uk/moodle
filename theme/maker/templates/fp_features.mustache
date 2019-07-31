@@ -1,0 +1,49 @@
+{{#usefeaturedblocks}}
+
+<div class="featured-section">
+	
+	{{#featuredsectiontitle}}
+    <h2 class="section-title">{{{featuredsectiontitle}}}</h2>
+    {{/featuredsectiontitle}}
+    
+    <div class="container-fluid">
+	    <div class="section-inner">
+		    <div class="featured-carousel owl-carousel owl-theme">
+			    
+			    {{#featuredblocks}}
+				    {{#hasblock}}
+				    <div class="item item-{{{blockcount}}}">
+					    <div class="item-inner">
+						    {{#blockimage}}
+						    <div class="thumb-holder">
+							    <div class="thumb-holder-inner">
+							    </div><!--//thumb-holder-inner-->
+						    </div><!--//thumb-holder-->
+						    {{/blockimage}}
+						    <div class="item-content">
+							    {{#blocktitle}}
+							    <h3 class="item-title">{{{blocktitle}}}</h3>
+							    {{/blocktitle}}
+							    {{#blockcontent}}
+							    <div class="item-desc">{{{blockcontent}}}</div>
+							    {{/blockcontent}}
+						    </div><!--//item-content-->
+						    {{#blockurl}}
+						    <a class="item-link" href="{{{blockurl}}}"></a>
+						    {{/blockurl}}
+					    </div><!--//item-inner-->
+					    {{#blocklabel}}
+					    <span class="item-label">{{{blocklabel}}}</span>
+					    {{/blocklabel}}
+				    </div><!--//item-->		
+				    {{/hasblock}}	    
+			    {{/featuredblocks}}
+			    
+			    		        
+			</div><!--//course-carousel-->
+		</div><!--//section-inner-->
+    </div><!--//container-fluid-->
+</div><!--//featured-section-->
+
+
+{{/usefeaturedblocks}}

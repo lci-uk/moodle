@@ -1,0 +1,51 @@
+{{#usetestimonials}}
+<div class="testimonial-section">
+    <div class="container-fluid">
+	    {{#testimonialsectiontitle}}
+	    <h2 class="section-title">
+		    {{{testimonialsectiontitle}}}
+	    </h2>
+	    {{/testimonialsectiontitle}}
+
+	    <div class="section-inner">
+		    <div class="testimonial-carousel owl-carousel owl-theme">
+			    {{#testimonials}}
+			    {{#hastestimonial}}
+			    <div class="item">
+				    
+				    <div class="quote-holder">
+					    <div class="quote-content">
+						    {{{testimonial}}}
+					    </div>
+					    <i class="fa fa-quote-left" aria-hidden="true"></i>
+				    </div><!--//quote-holder-->
+				    <div class="source-holder">
+					    {{^testimonialimage}}
+					    <div class="profile">
+						    <img src="{{{defaultimage}}}" alt="image"/>
+					    </div>
+					    {{/testimonialimage}}
+					    
+					    {{#testimonialimage}}
+					    <div class="profile">
+						    <img src="{{{testimonialimage}}}" alt="image"/>
+					    </div>
+					    {{/testimonialimage}}
+					    <div class="meta">
+						    {{#testimonialname}}
+						    <div class="name">{{{testimonialname}}}</div>
+						    {{/testimonialname}}
+						    {{#testimonialmeta}}
+						    <div class="info">{{{testimonialmeta}}}</div>
+						    {{/testimonialmeta}}
+					    </div>
+				    </div>
+			    </div><!--//item-->
+			    {{/hastestimonial}}
+			    {{/testimonials}}
+
+		    </div><!--//testimonial-carousel-->			    
+	    </div><!--//section-inner-->    
+    </div><!--//container-fluid-->
+</div><!--//testimonial-section-->
+{{/usetestimonials}}

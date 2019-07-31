@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="384px" height="512px" viewBox="0 0 384 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>avi</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="avi" fill="#00BCD4" fill-rule="nonzero">
+            <path d="M384,121.941 L384,128 L256,128 L256,0 L262.059,0 C268.424,0 274.529,2.529 279.03,7.029 L376.971,104.97 C381.471354,109.471363 383.999683,115.575825 384,121.941 Z M224,136 L224,0 L24,0 C10.745,0 0,10.745 0,24 L0,488 C0,501.255 10.745,512 24,512 L360,512 C373.255,512 384,501.255 384,488 L384,160 L248,160 C234.8,160 224,149.2 224,136 Z M320,280.016 L320,391.979 C320,413.424 294.057,423.977 279.029,408.95 L224,353.941 L224,392 C224,405.255 213.255,416 200,416 L88,416 C74.745,416 64,405.255 64,392 L64,280 C64,266.745 74.745,256 88,256 L200,256 C213.255,256 224,266.745 224,280 L224,318.059 L279.029,263.046 C294.04,248.036 320,258.555 320,280.016 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
