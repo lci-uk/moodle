@@ -1,0 +1,224 @@
+/* Course Format Plugins */
+
+/* Topcoll */
+
+
+#region-main {
+	
+	.course-content ul.ctopics li.section .content .toggle, .course-content ul.ctopics li.section .content.sectionhidden {
+		//background-color: $smoky-white;
+		@include border-radius(2px);
+	}
+	
+	.course-content ul.ctopics li.section .content .toggle span, .course-content ul.ctopics li.section .content.sectionhidden  {
+		//color: $theme-text-color-primary;
+	}
+	
+	.course-content ul.ctopics li.section.hidden .sectionname {
+		//color: $theme-text-color-light;
+		font-style: normal;
+	}
+	
+	.course-content ul.ctopics li.section .content .toggle .ishidden span {
+		//color: #fff;
+	}
+
+	
+	.course-content ul.ctopics li.section .content .toggle span.the_toggle h3.sectionname, .course-content ul.ctopics li.section .content.sectionhidden h3.sectionname {
+		font-size: 18px;
+	}
+	.course-content ul.ctopics li.section .content .toggle span.the_toggle {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		position: relative;
+	}
+	
+	.course-content ul.ctopics li.section.main {
+		
+		margin: 0;
+		margin-bottom: 10px;
+		border-bottom: none;
+	}
+	
+	.course-content ul.ctopics li.section .content .toggledsection {
+		padding: 0;
+		margin-bottom: 15px;
+	}
+	
+	#toggle-all .content .sectionbody h4 {
+		margin-bottom: 15px;
+	}
+	
+	
+	 #toggle-all .content .toggle-arrow h4 span {
+		 //background: $smoky-white;
+		 font-size: 14px;
+		 font-weight: normal;
+		 
+		 &:before {
+			 margin-right: 5px;
+		 }
+		 
+	 }
+	 .course-content ul.ctopics li.section.main .side.right {
+		 margin-top:15px;
+		 a { 
+            //color: $theme-text-color-primary;
+            &:hover {
+	            //color: $theme-color-primary;
+            }
+		 }
+	 }
+	 
+	 .course-content ul.ctopics li.section.main .side.left {
+		 padding-top:6px;
+	 }
+	
+}
+
+body.jsenabled #topcoll-display-instructions {
+	margin: 0;
+	padding: 15px 0;
+}
+
+body.jsenabled .course-content ul.ctopics li.section .content .toggle-arrow span.toggle_closed, #toggle-all .content .toggle-arrow h4 span.on, body#page-admin-setting-formatsettingtopcoll select#id_s_format_topcoll_defaulttoggleiconset option[value="arrow"], body#page-course-edit select#id_toggleiconset option[value="arrow"]{
+	background-image: none !important;
+    &:before {
+	    content: "\f0da"; 
+	    display: inline-block;
+		font-family: FontAwesome;
+		line-height: 1;
+		font-size: inherit;
+		text-rendering: auto;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		
+    }
+
+}
+
+
+.course-content ul.ctopics li.section .content .toggle-arrow span.toggle_closed, .course-content ul.ctopics li.section .content .toggle-arrow span.toggle_open, body.jsenabled .course-content ul.ctopics li.section .content .toggle-arrow span.toggle_open, #toggle-all .content .toggle-arrow h4 span.off {
+	background-image: none !important;
+	&:before {
+	    content: "\f0d7"; 
+	    display: inline-block;
+		font-family: FontAwesome;
+		line-height: 1;
+		font-size: inherit;
+		text-rendering: auto;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+
+    }
+}
+
+.course-content ul.ctopics li.section .content .toggle-arrow span.toggle_open, .course-content ul.ctopics li.section .content .toggle-arrow span.toggle_closed, body.jsenabled .course-content ul.ctopics li.section .content .toggle-arrow span.toggle_open, body.jsenabled .course-content ul.ctopics li.section .content .toggle-arrow span.toggle_closed {
+	    &:before {
+		    position: absolute;
+			left: 10px;
+			top: 15px;
+			font-size: 18px !important;
+	    }    
+}
+
+#region-main .course-content ul.ctopics li.section.main {
+	width: 100%;
+	display: block;
+}
+
+/* Button format */
+#buttonsectioncontainer .buttonsection.sectionvisible {
+	//background: $theme-color-primary;
+	&:hover {
+		//background: $theme-color-primary;
+	}
+}
+
+#buttonsectioncontainer .buttonsection {
+	//color: $theme-text-color-primary;
+	//background: $theme-bgcolor;
+	&:hover {
+		//background: darken($theme-bgcolor, 10%);
+	}
+}
+
+/* Grid format */
+
+#page-course-view-grid {
+	#gridshadebox_content ul.gtopics {
+		margin: 0;
+		padding: 30px;
+	}
+	
+	#gridshadebox_content {
+		border: none;
+
+	}
+	
+	#region-main .course-content ul.gridicons li {
+		@include border-radius(2px);
+		&:hover {
+			background: $theme-text-color-secondary;
+			a {
+				color: #fff;
+			}
+		}
+	}
+	.course-content ul.gridicons li.currentselected {
+		background: $theme-text-color-secondary;
+		a {
+			color: #fff;
+		}
+		
+	}
+	.course-content ul.gridicons li .gridicon_link {
+		color: $theme-text-color-secondary;
+		
+		&:hover {
+			color: $theme-text-color-primary;
+			text-decoration: none;
+			
+		}
+	}
+	.course-content ul.gridicons li.currentselected .icon_content {
+		color: #fff;
+	}
+	
+	.course-content ul.gridicons li.currentselected .icon_content .tooptip {
+		max-width:600px;
+	}
+	
+	.course-content ul.gridicons li .gridicon_link .tooltip-inner  {
+		background-color: $theme-text-color-primary;
+		color: #fff;
+		max-width: 800px;
+		padding: 10px;
+	}
+	.course-content ul.gridicons li .gridicon_link .tooltip .tooltip-arrow {
+		display: none;
+	}
+	
+	.course-content ul.gridicons li .image_holder {
+		border: none;
+		background: $smoky-white;
+		@include border-radius(2px);
+		&:hover {
+			border: none !important;
+			background: darken($smoky-white, 5%);
+		}
+	}
+	
+	.gridshadebox_arrow {
+		top: 50%;
+		margin-top: -27px;
+	}
+	
+
+}
+
+
+#page-course-view-grid #region-main>.card.card-block {
+	overflow:inherit; /* prevent tooptips get cut off */
+}
+

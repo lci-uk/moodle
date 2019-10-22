@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon">
+            <path d="M448,0 L64,0 C28.7,0 0,28.7 0,64 L0,352 C0,387.3 28.7,416 64,416 L160,416 L160,500 C160,509.8 171.2,515.5 179.1,509.7 L304,416 L448,416 C483.3,416 512,387.3 512,352 L512,64 C512,28.7 483.3,0 448,0 Z" id="Shape" fill="#F77B6A" fill-rule="nonzero"></path>
+            <path d="M144,118 C144,114.7 146.7,112 150,112 L362,112 C365.3,112 368,114.7 368,118 L368,138 C368,141.3 365.3,144 362,144 L150,144 C146.7,144 144,141.3 144,138 L144,118 Z" id="Path" fill="#FFFFFF"></path>
+            <path d="M144,189.5 C144,186.2 146.7,183.5 150,183.5 L362,183.5 C365.3,183.5 368,186.2 368,189.5 L368,209.5 C368,212.8 365.3,215.5 362,215.5 L150,215.5 C146.7,215.5 144,212.8 144,209.5 L144,189.5 Z" id="Path-Copy" fill="#FFFFFF"></path>
+            <path d="M144,261 C144,257.7 146.7,255 150,255 L362,255 C365.3,255 368,257.7 368,261 L368,281 C368,284.3 365.3,287 362,287 L150,287 C146.7,287 144,284.3 144,281 L144,261 Z" id="Path-Copy-2" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

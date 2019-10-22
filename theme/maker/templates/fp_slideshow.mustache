@@ -1,0 +1,71 @@
+{{#useheroslideshow}}
+<div class="hero-section">
+    <div class="hero-slider-wrapper">
+        <div class="flexslider hero-slider">
+            <ul class="slides">
+	            {{#hasslide1}}
+                <li class="slide slide-1"></li>
+                {{/hasslide1}}
+                {{#hasslide2}}
+                <li class="slide slide-2"></li>
+                {{/hasslide2}}
+                {{#hasslide3}}
+                <li class="slide slide-3"></li>
+                {{/hasslide3}}
+                {{#hasslide4}}
+                <li class="slide slide-4"></li>
+                {{/hasslide4}}
+            </ul>
+        </div>
+        <div class="hero-slider-mask"></div>
+    </div><!--//hero-slider-wrapper--> 
+    <div class="container hero-content">     
+	    {{#hasheroheadline}}           
+        <h2 class="headline">{{{heroheadline}}}</h2>
+        {{/hasheroheadline}} 
+        {{#hasherosummary}} 
+        <div class="tagline">{{{herosummary}}}</div>
+        {{/hasherosummary}} 
+        
+        <div class="actions">
+	        {{#hasheroctabtn}} 
+            <a class="btn theme-btn-cta theme-btn-primary" href="{{{herourl}}}"  {{#urlopennew}}target="_blank"{{/urlopennew}}>{{{herocta}}}</a>  
+            {{/hasheroctabtn}} 
+            {{#useherovideo}} 
+            <a href="#" class="play-trigger" data-toggle="modal" data-target="#modal-video-0" ><img class="play-icon" src="{{{videoplayicon}}}" alt="Play Video">{{{herovideo}}}</a>
+            {{/useherovideo}}
+        </div>
+    </div><!--//container-->
+
+    
+</div><!--//hero-section-->
+
+
+{{#useherovideo}}
+<!-- Video Modal 0-->
+<div class="modal modal-video modal-video-0" id="modal-video-0" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel-0" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="video-container embed-responsive embed-responsive-16by9">
+	                {{#useyoutubevideo}}
+	                
+                    <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/{{{herovideoid}}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    
+                    {{/useyoutubevideo}}
+                    
+                    {{#usevimeovideo}}
+                    <iframe class="embed-responsive-item" src="//player.vimeo.com/video/{{{herovideoid}}}" width="720" height="405" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    {{/usevimeovideo}}
+                    
+                </div><!--//video-container-->
+            </div><!--//modal-body-->
+        </div><!--//modal-content-->
+    </div><!--//modal-dialog-->
+</div><!--//modal-->
+{{/useherovideo}}
+
+{{/useheroslideshow}}

@@ -1,0 +1,219 @@
+/* Maker Built-in Staticpages */
+#region-main {
+	.staticpage-wrapper {
+		padding: 60px 30px;
+		max-width: 960px;
+		.staticpage-title {
+			font-weight: 300;
+			font-size: 32px;
+			text-align: center;
+			margin-bottom: 30px;
+		}
+		.page-row {
+			margin-bottom: 30px;
+			ul {
+				padding-left: 2rem;
+			}
+		}
+		
+		/* About Us */
+		.team-item {
+			position: relative;
+			padding-left: 280px;
+			border-bottom: 1px solid $theme-border-color;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			min-height: 310px;
+			.thumb {
+				position: absolute;
+				left: 0;
+				top: 30px;
+				width: 250px;
+				height: auto;
+			}
+			.name {
+				font-weight: 300;
+				font-size: 22px;
+			}
+			.meta {
+				color: $theme-text-color-light;
+				font-weight: normal;
+				font-size: 16px;
+			}
+			.details {
+				margin-bottom: 15px;
+			}
+			.social-list {
+				li {
+					margin-right: 5px;
+					&:last-child {
+						margin-right: 0;
+					}
+				}
+				a { 
+					display: inline-block;
+					@include border-radius(50%);
+					width: 32px;
+					height: 32px;
+					background: $theme-text-color-light;
+					color: #fff;
+					text-align: center;
+					padding-top: 7px;
+					&:hover {
+						background: $theme-text-color-secondary;
+					    color: #fff;	
+					}
+					.fa {
+						font-size: 18px;
+						
+					}
+				}
+			}
+		}
+		
+		/* Contact Us */
+		.contact-wrapper {
+			text-align: center;
+			.contact-intro, .map-intro {
+				max-width: 800px;
+				margin: 0 auto;
+				margin-bottom: 30px;
+			}
+			.contact-info-list {
+				list-style: none;
+				padding-left: 0;
+				max-width: 600px;
+				margin: 0 auto;
+				li {
+		            margin-bottom: 15px;           
+		            padding: 15px;
+		            position: relative;
+		            color: $theme-text-color-secondary;
+		            text-align: left;
+		            padding-left: 90px;
+		            @extend %card-box-shadow;
+		            border: 1px solid $theme-divider-color;
+
+		            a {
+		                color: $theme-text-color-secondary;
+		                &:hover {
+		                    color: $theme-color-primary;
+		                }
+		            }
+		            .fa {
+		                position: absolute;
+		                left: 0;
+		                top: 0;
+		                background: $theme-color-primary;
+		                color: #fff;
+		                width: 60px;
+		                height: 100%;
+		                font-size: 20px;
+		                padding-top: 15px;
+		                text-align: center;
+		                
+		                &.fa-twitter {
+		                    font-size: 22px;
+		                }
+		                &.fa-phone {
+		                    font-size: 22px;
+		                }
+		                &.fa-map-marker {
+		                    font-size: 22px;
+		                    padding-top: 45px;
+		                }
+		            }
+		        }
+		        
+			}
+			
+			.contact-map {
+		        margin-top: 60px;
+		        
+	        }
+	        .contact-map-title {
+		        font-weight: 300;
+		        margin-bottom: 30px;
+		        font-size: 24px;
+	        }
+	        .map-wrapper {
+		        position: relative;
+		        padding-bottom: 50%;
+		        iframe {
+			        position: absolute;
+				    top: 0;
+				    left: 0;
+				    width: 100% !important;
+				    height: 100% !important;
+		        }
+	        }
+			
+		}
+		
+		.faq-wrapper {
+			.card {
+		        background: #fff;
+		        border: none;
+		        @extend %card-box-shadow;
+		        border: 1px solid $theme-border-color;
+		        margin-bottom: 20px;
+		        .card-header {
+		            padding: 15px 30px;
+		            background: #fff;
+		            border: none;
+		            
+		        }
+		        .card-body{
+		            padding: 30px;
+		            padding-top: 0;
+		        }
+		        .card-title {
+		            font-weight: normal;
+		            font-size: 1rem;
+		            margin-bottom: 0;
+		            
+		            .card-toggle {
+		                color: $theme-text-color-primary;
+		                font-weight: 500;
+		                text-decoration: none !important;
+
+		            }
+		            .card-toggle[aria-expanded="true"] {
+                         //color: $theme-color-primary;
+		            }
+		        }
+		    }
+		}
+		
+	}
+	
+	
+}
+
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767px) { 
+	
+	#region-main .staticpage-wrapper {
+		padding: 30px 15px;
+		.staticpage-title {
+			font-size: 28px;
+		}
+	}
+	
+	#region-main .staticpage-wrapper .team-item {
+		padding-left: 0;
+		text-align: center;
+		.thumb {
+			position: static;
+			margin: 0 auto;
+			margin-bottom: 30px;
+			display: inline-block;
+		}
+		.social-list {
+			margin: 0 auto;
+		}
+		
+	}
+	
+}

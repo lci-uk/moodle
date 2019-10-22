@@ -1,0 +1,170 @@
+/********* Footer *********/
+
+#page-footer {
+	
+	color: rgba(256, 256, 256, 0.7);
+	font-size: 14px;
+	background: $theme-text-color-primary;
+	
+	a {
+        color: rgba(256, 256, 256, 0.7);
+        &:hover {
+            color: #fff;
+        }
+    }
+    
+    .logininfo {
+	    margin-bottom: 30px;
+    }
+	
+    .page-footer-inner {
+	    padding-top: 30px;
+	    padding-bottom: 30px;
+    }
+    
+    .footer-block {
+	    padding-top: 30px;
+	    padding-bottom: 30px;
+	    font-size: 14px;
+        color: rgba(256, 256, 256, 0.8);
+        a {
+	       text-decoration: none; 
+	       &:hover {
+		       text-decoration: underline;
+	       }
+        }
+        
+        .footer-block-title {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+
+       
+        
+        &.footer-block-links {
+            .fa {
+                margin-right: 5px;
+            }
+            li {
+                margin-bottom: 10px;
+            }
+        }
+        .footer-contact-info {
+	        .has-icon {
+		        position: relative;
+		        padding-left: 30px;
+		        .icon {
+			        position: absolute;
+			        left: 0;
+		        }
+	        }
+	        
+
+            .fa {
+                margin-right: 10px;     
+            }
+            .fa-phone {
+                font-size: 16px;
+            }
+            .adr {
+	            .adr-group {
+		            display: inline-block;
+	            }
+                .fa-map-marker {
+                   font-size: 16px;
+                   margin-top: 3px; 
+                   margin-left: 2px;
+                }
+                
+            }
+        }
+   
+    
+    }
+    
+    .footer-divider {
+	        margin-top: 30px;
+		    margin-bottom: 30px;
+		    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .footer-widget {
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+        max-width: 760px;
+        
+    }
+    
+    .footer-widget-title {
+	    font-size: 18px;
+	    font-weight: 400;
+        margin-top:0;
+        margin-bottom: 15px;
+        color: #fff;
+    }
+
+    
+    .footer-social-media {
+	    text-align: center;
+	    margin-bottom: 30px;
+    }
+    
+    .social-media-list {
+	    margin: 0 auto;
+		margin-bottom: 0;
+		li {
+			margin-right: 5px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		a {
+			color: rgba(256, 256, 256, 0.6);
+			font-size: 16px;
+			@include border-radius(50%);
+			background: rgba(0, 0, 0, 0.3);
+			display:inline-block;
+			width: 30px;
+			height: 30px;
+			text-align: center;
+			padding-top:4px;
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+	
+	.moodle-links-container {
+	    text-align: center;
+	    .nav {
+		    text-align: center;
+		    margin-bottom: 15px;
+		    ul {
+			    margin: 0 !important;
+		    }
+		    a {
+			    text-decoration: none;
+			    &:hover {
+				    text-decoration: underline;
+			    }
+		    }
+	    }
+    }
+   
+    
+    .footer-bottom-bar {
+        background: darken($theme-text-color-primary, 10%);
+        color: rgba(256, 256, 256, 0.4);
+        padding: 10px 0;
+        text-align: center;
+        copyright {
+	        font-size: 14px;
+	         
+        }
+    }
+    
+}

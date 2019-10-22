@@ -1,0 +1,1547 @@
+/************* Override Moodle *************/
+
+#page-wrapper {
+	padding-bottom: 0;
+	margin-bottom: 0;
+	&:after {
+		display: none;
+		min-height: inherit;
+	}
+}
+#footer {
+	min-height: inherit;
+}
+
+/****** Main Block Area ******/
+
+#region-main {
+	@extend %remove-card-box-shadow;
+	& > .card {
+		margin-bottom: 30px;
+	}
+}
+
+#region-main  {
+	h1 {
+		font-size: 24px;
+		font-weight: 500;
+	}
+	
+	h2 {
+		font-weight:500;
+	    font-size: 22px;
+	}
+	h3 {
+		font-size: 20px;
+	}
+	
+	h4 {
+		font-size: 18px;
+	}
+	h5 {
+		font-size: 16px;
+	}
+	h6 {
+		font-size: 14px;
+	}
+	
+}
+
+.course-content li.section li.activity {
+	
+	ul, ol, dl {
+		margin-bottom: 1rem;
+	}
+	table {
+		margin-bottom: 1rem;
+	}
+	
+}
+
+#region-main > .card, #page-enrol-users #region-main > #filterform, .que #region-main > .history, .userprofile .profile_tree #region-main > section, #region-main > .groupinfobox, #region-main > .forumpost, .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax #region-main > .yui-layout-unit-right, .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax #region-main > .yui-layout-unit-bottom, .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax #chat-messages #region-main > .chat-message.course-theme, #region-main > .well {
+	@extend %card-box-shadow;
+}
+
+
+.btn-secondary:active, .btn-default:active, .btn-secondary.active, .fp-viewbar:not(.disabled) a.checked, .btn-default.active, .open > .btn-secondary.dropdown-toggle, .open > .btn-default.dropdown-toggle {
+	border-color: $theme-text-color-secondary;
+	color: #fff;
+	background: $theme-text-color-secondary;
+}
+
+.nav-tabs a.nav-link {
+	color: $theme-text-color-secondary;
+	&.active {
+		color: $theme-text-color-primary;
+	}
+}
+
+.table-striped tbody tr:nth-of-type(odd), table.collection tbody tr:nth-of-type(odd), table#explaincaps tbody tr:nth-of-type(odd), table#defineroletable tbody tr:nth-of-type(odd), table.grading-report tbody tr:nth-of-type(odd), table#listdirectories tbody tr:nth-of-type(odd), table.rolecaps tbody tr:nth-of-type(odd), table.userenrolment tbody tr:nth-of-type(odd), form#movecourses table tbody tr:nth-of-type(odd), #page-admin-course-index .editcourse tbody tr:nth-of-type(odd), .forumheaderlist tbody tr:nth-of-type(odd), table.flexible tbody tr:nth-of-type(odd), .generaltable tbody tr:nth-of-type(odd) {
+	background: $smoky-white;
+}
+
+.table-hover tbody tr:hover, table.grading-report tbody tr:hover, .forumheaderlist tbody tr:hover, .generaltable tbody tr:hover, table.flexible tbody tr:hover, .category_subcategories tbody tr:hover, table#modules tbody tr:hover, table#permissions tbody tr:hover {
+	background: darken($smoky-white, 2%);
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.open .nav-link, .nav-tabs .nav-link.active:focus, .nav-tabs .nav-item.open .nav-link:focus, .nav-tabs .nav-link.active:hover, .nav-tabs .nav-item.open .nav-link:hover {
+	color: $theme-text-color-primary;
+	font-weight: 500;
+}
+
+#page {
+	margin-top: 0;
+}
+
+.dropdown-divider {
+	background: $theme-divider-color;
+}
+
+.popover-region-container {
+	border-color: $theme-divider-color;
+	border: none;
+	@include box-shadow(0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22));
+	color: $theme-text-color-secondary;
+			
+	.empty-message {
+		color: $theme-text-color-light;
+	}
+}
+
+.popover-region-header-container {
+	border-color: $theme-divider-color;
+	height: 35px;
+    line-height: 35px;
+    
+}
+
+.popover-region-header-text {
+	line-height: 34px;
+	margin-left: 5px;
+}
+
+.popover-region-footer-container {
+	border-color: $theme-divider-color;
+}
+
+.content-item-container {
+	border-color: $theme-divider-color;
+}
+
+.loginbox .potentialidp {
+	display: inline-block;
+}
+
+.progress-chart-container .progress-doughnut .progress-indicator svg .circle {
+	stroke: $theme-color-secondary;
+}
+
+.progress-chart-container .progress-doughnut .progress-text.has-percent {
+	color: $theme-color-secondary;
+}
+
+#page-header {
+	& > div {
+		padding: 0 !important;
+	}
+    .card {
+	    background: none;
+	    border: none;
+	    text-align: center;
+    }
+    .card-block {
+	    padding-bottom: 0;
+    }
+}
+
+.page-context-header .page-header-headings h1 {
+	font-size: 24px;
+	font-weight: 300;
+	color: $theme-text-color-primary;
+	margin-bottom: 10px;
+}
+
+.page-context-header .header-button-group a {
+	color: $theme-text-color-secondary;
+	font-weight:normal;
+	&:hover {
+		color: $theme-text-color-primary;
+		text-decoration: underline;
+	}
+	.icon {
+		color: $theme-text-color-light;
+		vertical-align: inherit;
+	}
+}
+
+//User profile page
+
+.path-user .page-context-header {
+	position: relative;
+	padding-left: 130px;
+	min-height: 115px;
+	text-align: left;
+}
+
+.path-user .page-context-header .page-header-image {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.path-user .page-context-header .page-header-headings {
+	float: none;
+}
+
+.path-user .page-context-header .header-button-group {
+	float: none;
+	margin-top: 15px;
+	a {
+		padding: 0;
+		
+		.icon {
+			margin-left: 0;
+			margin-rihght: 5px;
+		}
+	}
+	span {
+		margin-right: 10px;
+	}
+}
+
+
+
+
+
+
+.text-muted, a.dimmed, a.dimmed:link, a.dimmed:visited, a.dimmed_text, a.dimmed_text:link, a.dimmed_text:visited, .dimmed_text, .dimmed_text a, .dimmed_text a:link, .dimmed_text a:visited, .usersuspended, .usersuspended a, .usersuspended a:link, .usersuspended a:visited, .dimmed_category, .dimmed_category a, .tag_feed .media .muted a, #page-admin-qtypes .disabled, #page-admin-qbehaviours .disabled, #page-admin-plugins #plugins-control-panel .pluginname .componentname, #page-admin-plugins #plugins-control-panel .version .versionnumber, #page-admin-plugins #plugins-control-panel .notes .requiredby, #plugins-check-page .page-description, #plugins-check-page #plugins-check .requires-ok, #plugins-check-page #plugins-check .displayname .plugindir, #plugins-check-page #plugins-check-available-dependencies .displayname .component, .block .minicalendar td.weekend, .section .activity .stealth, .course-content .section-summary .section-summary-activities .activity-count, .course-content ul li.section.hidden .sectionname > span, .course-content ul li.section.hidden .content > div.summary, .course-content ul li.section.hidden .activity .activityinstance, #course-category-listings .listitem[data-visible="0"], #course-category-listings .listitem[data-visible="0"] > div > a, #course-category-listings .listing-pagination-totals.dimmed, .fitem.disabled .fp-btn-choose, .form-defaultinfo, .form-label .form-shortname, .formsettingheading .form-horizontal, .no-felement.fstatic, .path-backup .backup_progress .backup_stage {
+	color: $theme-text-color-light !important;
+}
+
+
+.card, #page-enrol-users #filterform, .que .history, .userprofile .profile_tree section, .groupinfobox, .forumpost, .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax .yui-layout-unit-right, .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax .yui-layout-unit-bottom, .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax #chat-messages .chat-message.course-theme, .well {
+	@include border-radius(0);
+	border: none;
+}
+
+.filemanager-container.card, .fp-navbar.card {
+	border: 1px solid #bbb;
+}
+
+.breadcrumb {
+	padding:0;
+	background: none;
+	color: $theme-text-color-light;
+	font-size: 14px;
+	a {
+		color: darken($theme-text-color-light, 15%);
+		&:hover {
+			color: $theme-text-color-secondary;
+		}
+	}
+}
+
+.breadcrumb-item:first-child:before {
+	display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f0e4";
+    font-size: 14px;
+    margin-right: 5px;
+    color: $theme-text-color-light;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+	content: "/"
+}
+
+.breadcrumb-button {
+	position: absolute;
+	right: 15px;
+	bottom: 20px;
+	margin: 0;
+	
+}
+
+img.userpicture {
+	@include border-radius(50%);
+}
+
+.settingsform {
+	h2 {
+		font-weight:normal;
+		font-size: 18px;
+	}
+}
+
+
+.course-content {
+	.sectionname {
+		font-size: 20px;
+		color: $theme-text-color-primary;
+		a {
+			color: $theme-text-color-primary;
+		}
+	}
+}
+
+
+.path-mod-assign div[data-region="grading-navigation-panel"] {
+	background: #fff;
+	@include box-shadow(0px 1px 4px 0px rgba(0,0,0,.1));
+	border-bottom: none;
+	z-index: 10;
+	a {
+		color: $theme-text-color-secondary;
+	}
+}
+
+.path-mod-assign div[data-region="grade-panel"].fullwidth {
+	background: $theme-bgcolor;
+	
+
+}
+
+.path-mod-assign div[data-region="user-info"] {
+	.img-rounded {
+		height: 60px;
+		@include border-radius(50%);
+	}
+	h4 {
+		font-size: 24px;
+		
+	    a {
+			color: $theme-text-color-primary;
+			
+			em {
+				margin-top: 5px;
+				color: $theme-text-color-light;
+				font-size: 15px;
+				font-weight: normal;
+		    }
+		}
+		
+		
+		
+	}
+}
+
+.path-mod-assign div[data-region="assignment-info"] {
+	font-size: 14px;
+}
+
+
+.path-mod-assign div[data-region="user-selector"] a {
+	text-decoration: none;
+	color: $theme-text-color-light;
+}
+
+.path-mod-assign [data-region="review-panel"].collapsed + [data-region="grade-panel"] [data-region="grade"], .path-mod-assign [data-region="grade-panel"].fullwidth [data-region="grade"] {
+	background: #fff;
+	padding: 30px;
+}
+
+.path-mod-assign div[data-region="grade-actions-panel"] {
+	background: #fff;
+	@include box-shadow(0px -1px 4px 0px rgba(0,0,0,.1));
+	border-top: none;
+}
+
+.path-mod-assign td.submissiongraded, .path-mod-assign div.submissiongraded {
+	background: #d4edda;
+	color: #155724;
+}
+
+.path-mod-assign .overdue font{
+	color: #dc3545 !important;
+	font-size: 14px;
+}
+
+.path-mod-assign div[data-region="grade-panel"] h3 {
+	color: $theme-text-color-primary;
+}
+
+.path-mod-assign td.submissionstatus, .path-mod-assign div.submissionstatus, .path-mod-assign a:link.submissionstatus {
+	color: $theme-text-color-light;
+	background: $smoky-white;
+}
+
+.path-mod-assign div.submissionstatus, .path-mod-assign div.submissiongraded {
+	padding: 5px;
+	font-size: 14px;
+}
+
+.progress-chart-container .no-progress .icon {
+	width: 30px;
+	height: 30px;
+	margin-left: -2px;
+	margin-top: -2px;
+}
+
+.block_myoverview .courses-view-course-item {
+	@extend %card-box-shadow;
+	border: 1px solid $theme-border-color;
+	
+	
+}
+.block_myoverview .content-centred {
+	max-width: 1200px;
+}
+
+.block_myoverview {
+	
+    h4 a {
+		color: $theme-text-color-primary;
+	}
+
+	
+}
+
+.block_myoverview .event-list-item .event-name-container .event-name {
+	color: $theme-text-color-primary;
+}
+
+#myoverview_timeline_courses {
+	ul[data-region="course-block"] > .list-group-item {
+		@include box-shadow(0 1px 2px rgba(0,0,0,.1));
+		@include border-radius(0);
+		margin-bottom: 30px !important;
+	}
+	
+	.btn-secondary.text-primary{
+		color: $theme-text-color-secondary !important;
+		&:hover {
+			color: $theme-text-color-primary !important;
+		}
+	}
+}
+
+.tag-default {
+	background: $theme-text-color-secondary;
+}
+
+.btn-group .btn {
+	font-size: 14px;
+}
+	
+
+.collapsible-actions .collapseexpand {
+	color: $theme-text-color-light;
+	&:hover {
+		color: $theme-text-color-secondary;
+	}
+}
+
+.section .activity .activityinstance {
+	a {
+		color: $theme-text-color-secondary;
+	}
+}
+
+.initialbar .letter.active {
+	border-color: $theme-color-primary;
+	background-color:$theme-color-primary;
+}
+
+.initialbar .letter {
+	color: $theme-text-color-secondary;
+	border-color: $theme-text-color-secondary;
+	&:hover {
+		color: $theme-color-primary;
+		background: #fff;
+		text-decoration: none;
+	}
+}
+
+.messaging-area-container .messaging-area .contacts-area .contacts .contact.selected {
+	background: $theme-text-color-secondary;
+	color: #fff;
+}
+
+.messaging-area-container .messaging-area.hide-messages .contacts-area .contact.selected:hover {
+	background: $theme-text-color-primary;
+	color: #fff;
+}
+
+.messaging-area-container a, .messaging-area-container .btn.btn-link, .messaging-area-container #page-grade-grading-manage .actions .action.btn-link, #page-grade-grading-manage .actions .messaging-area-container .action.btn-link, .messaging-area-container #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-link, #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .messaging-area-container input.btn-link, .messaging-area-container #rubric-rubric.gradingform_rubric .addcriterion.btn-link, #rubric-rubric.gradingform_rubric .messaging-area-container .addcriterion.btn-link {
+	color: $theme-color-primary;
+}
+
+.messaging-area-container .messaging-area .contacts-area .tabs .tab.selected {
+	color: $theme-color-primary;
+}
+
+.messaging-area-container .messaging-area .contacts-area .tabs .tab:hover {
+	color: $theme-color-primary;
+}
+
+.messaging-area-container .messaging-area .contacts-area .tabs .tab {
+	font-size: 14px;
+}
+
+.messaging-area-container .messaging-area .contacts-area .tabs .tab .tabimage {
+	height: 24px;
+    line-height: 24px;
+    
+}
+
+.messaging-area-container .messaging-area .messages-area .messages-header .name-container .name {
+	.btn-link {
+		color: $theme-text-color-secondary;
+	}
+}
+
+.messaging-area-container .messaging-area .messages-area .messages .message .content {
+	font-size: 14px;
+}
+
+.pagelayout-coursecategory {
+	.course_category_tree {
+		margin-bottom: 30px;
+	}
+}
+
+.quizattempt .singlebutton {
+	margin-bottom: 15px;
+}
+
+.instanceshufflequestions label {
+	font-size: 14px;
+}
+
+#page-admin-setting-maintenancemode {
+	.breadcrumb-button > a {
+		margin-left: 10px;
+		color: $theme-color-secondary;
+		font-weight: bold;
+		line-height: 36px;
+	}
+}
+
+.path-mod-forum :target~.forumpost:before {
+	background: lighten($theme-color-primary, 15%);
+}
+
+.badge-important {
+	background: $theme-color-counter;
+}
+
+.singlebutton.forumaddnew {
+	margin-bottom: 2rem;
+	margin-top: 1rem;
+}
+
+.fp-dlg-buttons {
+	.btn {
+		margin-bottom: 10px;
+	}
+}
+
+
+/****** Sideblocks ******/
+#block-region-side-pre {
+	
+	.card-block {
+		@extend %card-box-shadow;
+	}
+	h3.card-title {
+		font-size: 18px;
+		color: $theme-text-color-primary;
+		font-weight: 500;
+		border-bottom: 1px solid $theme-border-color;
+		padding-bottom: 10px;
+		margin-bottom: 15px;
+
+	}
+	.card-text.content {
+		font-size: 14px;
+		h3 {
+			font-size: 16px;
+		}
+		.activityhead {
+			margin-bottom: 15px;
+		}
+	}
+
+	.tag_cloud {
+		font-size: 10px;
+	}
+	
+	.block .calendar-controls  {
+		a {
+			color: $theme-text-color-light;
+			&:hover {
+				color: $theme-text-color-secondary;
+				text-decoration: underline;
+			}
+		}
+	}
+	
+	.block_news_items {
+		.newlink {
+			margin-bottom: 10px;
+		}
+		.post {
+			margin-bottom: 5px;
+			.head {
+				font-size: 13px;
+				color: $theme-text-color-light;
+				line-height: 1.2;
+			}
+			.info {
+				a{
+					color: $theme-text-color-secondary;
+					font-weight:500;
+					
+				}
+			}
+		}
+	}
+	
+	.comment-area textarea {
+		border-color: $theme-border-color;
+	}
+}
+
+.block_myprofile .myprofileitem.fullname {
+	font-size: 14px;
+	line-height: 1.4;
+	margin-top: 10px;
+}
+
+.block_myprofile img.profilepicture {
+	@include border-radius(50%);
+}
+
+.path-enrol {
+	.course-item-inner {
+		padding-left: 250px;
+		position: relative;
+		@include box-shadow(0 1px 2px rgba(0,0,0,.1));
+		border: 1px solid $theme-border-color;
+		.course-thumb-holder{
+			background-color: $smoky-white;
+			text-align: center;
+			position: absolute;
+			width: 220px;
+			height: 140px;
+			left: 0;
+			top: 0;
+			&.hasimage {
+				overflow: hidden;
+			}
+			&.noimage {
+				padding: 30px;
+			}
+			
+			.material-icons {
+				width: 80px;
+				height: 80px;
+				display: inline-block;
+				margin: 0 auto;
+				background: #fff;
+				@include border-radius(50%);
+				padding-top: 20px;
+				color: $theme-text-color-secondary;
+				position: relative;
+				top: 50%;
+				margin-top: -40px;
+				text-align: center;
+				font-size: 36px;
+				
+			}
+			
+		}
+		
+		.course-thumb {
+			max-width: 100%;
+			height: auto;
+			text-align: center;
+			
+		}
+		
+		.course-content-wrapper {
+			padding: 15px;
+		    min-height: 140px;
+			
+		}
+		.course-title {
+			font-size: 18px;
+			color: $theme-text-color-primary;
+			font-weight: 500;
+			@include truncate(700px);
+			a {
+				color: $theme-text-color-primary;
+			}
+		}
+		.course-summary {
+			font-size: 14px;
+			overflow: hidden;
+			line-height: 1.4;
+			//height: 2.5rem;
+		}
+		.course-meta {
+			position: absolute;
+			right: 10px;
+			top: 5px;
+			.icon {
+				margin-right: 0;
+				& + .icon {
+					margin-left: 5px;
+				}
+			}
+			.icon[title="Stripe Payment"] {
+				width: 60px;
+				height: auto;
+	
+			}
+			.icon[title="PayPal"] {
+				width: 70px;
+				height: auto;
+	
+			}
+		}
+		.teachers {
+			margin-top: 10px;
+			margin-bottom: 0;
+			font-size: 14px;
+			list-style: none;
+			padding-left: 0;
+			color: lighten($theme-text-color-secondary, 15%);
+			li {
+				font-size: 12px;
+				display: inline-block;
+				
+			}
+			a {
+			     color: lighten($theme-text-color-secondary, 15%);
+			}
+		}
+	}
+}
+
+/******* Settings *******/
+
+.mform fieldset.collapsible legend a.fheader {
+	color: $theme-text-color-primary;
+}
+
+/* In-course Bootstrap components */
+/* Basics */
+.mb-0 {
+	margin-bottom: 0;
+}
+	
+/* reset card styling in course content */
+.course-content, .editor_atto, #gridshadebox, .moodle-dialogue-base {
+	.card {
+		@include border-radius(0.25rem);
+	    border: 1px solid rgba(0, 0, 0, 0.125);
+	    
+	    .card-img-top{
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	.card-body {
+		padding: 1.25rem;
+		
+	}
+	.btn {
+		&.has-icon {
+			.fa {
+				margin-right: 5px;
+			}
+		}
+		
+	}
+	.btn-link {
+		color: $theme-color-primary;
+		&:hover {
+			color: darken($theme-color-primary, 10%);
+		}
+	}
+	.badge {
+		font-size: 14px;
+		vertical-align: middle;
+		@include border-radius(2px);
+		&.badge-pill {
+			@include border-radius(10rem);
+			padding-right: .6em;
+            padding-left: .6em;
+            vertical-align: middle;
+		}
+	}
+	
+	.badge-default {
+		background: $theme-text-color-secondary;
+	}
+	.badge-primary {
+		background: $theme-color-primary;
+	}
+
+	.badge-success {
+		background: #28a745;
+	}
+	.badge-warning {
+		background: #ffc107;
+		color: #212529;
+	}
+	.badge-danger {
+		background: #dc3545;
+	}
+	
+	.modal-header .close {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.nav.nav-tabs {
+		margin-bottom: 1rem;
+	}
+	.nav-tabs .nav-item {
+		list-style: none;
+	}
+	
+	.btn-group .dropdown-menu {
+		list-style:none;
+		margin-top: 0;
+		left: 0;
+		right: auto;
+
+	}
+	
+	li.section.main .activity .no-overflow, li.section.main .summary>.no-overflow {
+        overflow: inherit;
+	}
+
+	
+}
+
+
+.tag, .statusok, .statuswarning, .statusserious, .statuscritical, .assignfeedback_editpdf_widget .label, .label, .badge {
+	@include border-radius(2px);
+}
+
+	
+/* Atto fullscreen */
+.atto-fullscreen #topcontrol {
+	display: none;
+}
+
+.course-content .current::before {
+	border-color: $theme-color-secondary;
+}
+
+.nav-pills .nav-item {
+	margin-right: 10px;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.nav-pills .nav-link {
+	color: $theme-text-color-secondary;
+	@include border-radius(4px);
+	font-weight: bold;
+	&:hover {
+		background: $smoky-white;
+		
+	}
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+	background: $theme-text-color-secondary;
+	font-weight: bold;
+	
+}
+
+
+.block_myoverview .courses-view-course-item {
+	&>a {
+		display: block;
+		overflow: hidden;
+	}
+}
+
+
+.card-deck .myoverviewimg.courseimage {
+	overflow: hidden;
+	@include transition (all 0.4s ease-in-out);
+	&:hover {
+		@include scale(1.1);
+	}
+}
+
+.card-deck .myoverviewimg.coursepattern {
+	background: $smoky-white;
+	background-image: none !important;
+	position: relative;
+	
+	
+	&:before {
+		@include transition (all 0.4s ease-in-out);
+		position: absolute;
+		text-align: center;
+		left: 50%;
+		margin-left: -40px;
+		top: 50%;
+		margin-top: -40px;
+		width: 80px;
+		height: 80px;
+		padding-top:23px;
+		color: $theme-text-color-secondary;
+		background: #fff;
+		@include border-radius(50%);
+		
+		content: "\f19d";
+		display: inline-block;
+	    font: normal normal normal 14px/1 FontAwesome;
+	    font-size: 36px;
+	    text-rendering: auto;
+	    -webkit-font-smoothing: antialiased;
+	    -moz-osx-font-smoothing: grayscale;
+	    text-align: center;
+	}
+	
+	&:hover {
+		&:before {
+			@include scale(1.1);
+		}
+	}
+	
+}
+
+#page-navbar {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.context-header-settings-menu .dropdown-toggle>.icon, #region-main-settings-menu .dropdown-toggle>.icon {
+	margin-right: 0;
+	
+}
+
+.context-header-settings-menu .dropdown-toggle {
+	&::after {
+		position: relative;
+		top: -2px;
+	}
+}
+
+.bs-popover-auto[x-placement^=bottom] .arrow::before, .bs-popover-bottom .arrow::before {
+	top: -8px;
+}
+
+.bs-popover-auto[x-placement^=bottom] .arrow::after, .bs-popover-bottom .arrow::after {
+	top: -7px;
+}
+
+.card-block {
+	padding: 1.25rem;
+}
+
+#region-main h4.card-title {
+	font-size: 24px;
+}
+
+#region-main h5.card-title {
+	font-size: 20px;
+}
+
+.path-mod-assign [data-region="grade-actions-panel"] [data-region="grade-actions"] .collapse-buttons {
+	height: inherit;
+}
+
+.modal-content {
+	border: none;
+}
+
+.course-content .card {
+	margin-bottom: 15px;
+}
+
+
+@media (min-width: 992px) {
+	.course-content .card-deck .card {
+		flex-basis: 30%;
+	}
+}
+
+
+/*  new */
+.path-course-view.editing li.activity span.autocompletion img{
+	width:20px;
+	height: 20px;
+}
+
+.path-course-view li.activity form.togglecompletion img {
+	width:20px;
+	height: 20px;
+}
+
+.fp-filename-icon img.icon  {
+	width: 24px;
+	height: 24px;
+}
+
+.activity img.activityicon {
+	vertical-align: middle;
+}
+
+.path-course-view .completionprogress {
+	float: none;
+	height: inherit;
+}
+
+/* Course head background image */
+.path-course-view {
+	
+	
+
+    .page-header-wrapper.has-course-header-image {
+	    position: relative;
+	    height: $course-header-image-height;
+	    margin-bottom: 30px;
+	    
+	    #page-header {
+		    padding-top: 30px;
+	    }
+	    
+	    .page-context-header {
+		    background: $theme-text-color-primary;
+		    padding: 10px 15px;
+		    margin-bottom: 15px;
+		    @include border-radius(2px);
+		    max-width: 600px;
+		    text-align: left;
+	    }
+	    
+	    .page-context-header .page-header-headings h1 {
+		    color: #fff;
+		    font-weight: bold;
+		    margin-bottom: 0;
+	    }
+	    
+	    
+	    
+	    .breadcrumb {
+		    color: #fff;
+		    background: $theme-text-color-primary;
+		    padding: 10px 15px;
+		    @include border-radius(2px);
+	    }
+	    
+	    .breadcrumb a {
+		    color: #fff;
+		    
+	    }
+	    
+	    .breadcrumb-item + .breadcrumb-item::before {
+		    color: #fff;
+	    }
+	    
+	    .breadcrumb-item:first-child:before {
+		    color: #fff;
+	    }
+	    
+	    .context-header-settings-menu {
+		     height: inherit;
+		     margin-bottom: 15px;
+	    }
+	    
+	    .action-menu {
+		    
+		    a.dropdown-toggle {
+			    display: inline-block;
+				padding: 5px 10px;
+				background: $theme-color-primary;
+				@include border-radius(4px);
+			    color: #fff;
+			    
+			    
+			    & > .icon {
+				    color: #fff;
+				    margin-right: 0;
+			    }
+		    }
+	    }
+	    
+	    
+    }
+    
+    
+    
+	.course-header-bg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		
+		.has-course-image {
+			width: 100%;
+			height: 100%;
+			background-color: $theme-color-primary;
+		}
+		
+	}
+	.mask {
+		background: rgba(0, 0, 0, 0.3);
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		
+	}
+}
+
+
+.path-user.path-course .page-context-header {
+	padding-left: 0;
+	min-height: inherit;
+}
+
+
+.path-course-view li.activity form.togglecompletion .btn {
+	outline: none;
+}
+
+.btn:focus, #page-grade-grading-manage .actions .action:focus, #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input:focus, #rubric-rubric.gradingform_rubric .addcriterion:focus, .btn:active:focus, #page-grade-grading-manage .actions .action:active:focus, #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input:active:focus, #rubric-rubric.gradingform_rubric .addcriterion:active:focus, .btn.active:focus, #page-grade-grading-manage .actions .action.active:focus, #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.active:focus, #rubric-rubric.gradingform_rubric .addcriterion.active:focus, .btn.focus, #page-grade-grading-manage .actions .action.focus, #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.focus, #rubric-rubric.gradingform_rubric .addcriterion.focus, .btn:active.focus, #page-grade-grading-manage .actions .action:active.focus, #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input:active.focus, #rubric-rubric.gradingform_rubric .addcriterion:active.focus, .btn.active.focus, #page-grade-grading-manage .actions .action.active.focus, #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.active.focus, #rubric-rubric.gradingform_rubric .addcriterion.active.focus {
+	outline: none;
+}
+
+
+/* Calendar */
+.block .calendar_filters li {
+	margin-bottom: 10px;
+}
+.path-calendar .maincalendar .bottom {
+	padding-top: 30px;
+}
+.calendar_event_site {
+	background: #74C181;
+	@include border-radius(2px);
+	.icon {
+		color: #fff;
+	}
+	.modal-title {
+		color: #fff;
+	}
+	&>a {
+		color: #fff;
+	}
+}
+.calendar_event_category {
+	background: #9E6FB2;
+	@include border-radius(2px);
+	.icon {
+		color: #fff;
+	}
+	.modal-title {
+		color: #fff;
+	}
+	&>a {
+		color: #fff;
+	}
+}
+.calendar_event_course {
+	background: #F77B6A;
+	@include border-radius(2px);
+	.icon {
+		color: #fff;
+	}
+	.modal-title {
+		color: #fff;
+	}
+	&>a {
+		color: #fff;
+	}
+}
+
+.calendar_event_group {
+	background: #FF9800;
+	@include border-radius(2px);
+	.icon {
+		color: #fff;
+	}
+	.modal-title {
+		color: #fff;
+	}
+	&>a {
+		color: #fff;
+	}
+}
+
+.calendar_event_user {
+	background: #3EBABE;
+	@include border-radius(2px);
+	.icon {
+		color: #fff;
+	}
+	.modal-title {
+		color: #fff;
+	}
+	&>a {
+		color: #fff;
+	}
+}
+
+
+.path-calendar .maincalendar .calendarmonth ul li .badge.badge-circle.calendar_event_site {
+	background: #74C181;
+}
+
+.path-calendar .maincalendar .calendarmonth ul li .badge.badge-circle.calendar_event_category {
+	background: #9E6FB2;
+}
+
+
+.path-calendar .maincalendar .calendarmonth ul li .badge.badge-circle.calendar_event_course {
+	background: #F77B6A;
+}
+
+.path-calendar .maincalendar .calendarmonth ul li .badge.badge-circle.calendar_event_group {
+	background: #FF9800;
+}
+
+.path-calendar .maincalendar .calendarmonth ul li .badge.badge-circle.calendar_event_user {
+	background: #3EBABE;
+}
+
+
+
+
+
+
+
+.path-calendar .maincalendar .calendar_event_course {
+	border-color: #f44336
+}
+
+.modal .modal-header, .modal .modal-header .modal-title,  .modal .modal-header .close {
+	outline: none;
+}
+
+.close, .moodle-dialogue-base .closebutton {
+	text-shadow: none;
+}
+
+.modal-content, .moodle-dialogue-base .moodle-dialogue-wrap.moodle-dialogue-content {
+	border: none;
+}
+
+.block .calendar_filters li .icon {
+	padding: 5px;
+	margin: 0;
+}
+
+
+/* Courses page */
+#page-course-index .course_category_tree{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+#page-course-index .course_category_tree .subcategories {
+
+	.courses {
+		margin-bottom: 15px;
+		margin-top: 15px;
+	}
+}
+
+/* Category pages */
+#page-course-index-category .course_category_tree{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+#page-course-index-category .course_category_tree .courses {
+	margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#page-course-index .category {
+	margin-bottom: 15px;
+    padding: 15px;
+    background: #fff;
+    @extend %card-box-shadow;
+    border: 1px solid $theme-border-color;
+    &.loaded {
+	    .categoryname {
+		    margin-bottom: 15px;
+	    }
+    }
+    
+    &.collapsed {
+	    .categoryname {
+		    margin-bottom: 0;
+	    }
+    }
+    
+    &.notloaded {
+	    .categoryname {
+		    margin-bottom: 0;
+	    }
+    }
+    
+    .categoryname {
+	    font-weight:400;
+	    a {
+		    color: $theme-text-color-primary;
+		    
+		    &:hover {
+			   text-decoration: underline;
+		    }
+		}
+    } 
+    
+}
+
+.jsenabled .collapsible-actions {
+	margin-bottom: 15px;
+}
+
+#page-course-index-category .generalbox.info {
+	padding: 15px;
+}
+
+#page-course-index-category {
+	.categoryname a {
+	    color: $theme-text-color-primary;
+	    
+	    &:hover {
+		   text-decoration: underline;
+	    }
+	}
+	
+}
+
+/* GDPR Plugin */
+
+#page-user-policy.path-user .page-context-header {
+	min-height: auto;
+	padding-left: 0;
+} 
+
+.content-item-container:hover .content-item-footer .timestamp {
+	color: $theme-text-color-secondary;
+}
+
+/* Course Competency */
+div[data-region="coursecompetencyactivities"] .list-inline-item img {
+    width: 24px;
+}
+
+/* Course participants */
+.path-user.path-course .userprofile .page-context-header {
+	padding-left: 130px;
+	min-height: 115px;
+}
+
+/* Moodle 3.5 BS carousel fix */
+.carousel-item-next.carousel-item-left,
+.carousel-item-prev.carousel-item-right {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+@supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+  .carousel-item-next.carousel-item-left,
+  .carousel-item-prev.carousel-item-right {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.carousel-item-next,
+.active.carousel-item-right {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+@supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+  .carousel-item-next,
+  .active.carousel-item-right {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+.carousel-item-prev,
+.active.carousel-item-left {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+@supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+  .carousel-item-prev,
+  .active.carousel-item-left {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+/* Course List styles - Cards and Masonry */
+
+.style-cards {
+    .course-thumb-holder {
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    height: 160px;
+    }
+}
+
+.style-cards  {
+	overflow-x: hidden;
+	&.row {
+		margin-left: 0;
+		//margin-right: 0;
+	}
+	.theme-course-item {
+		padding-left: 0;
+		border: none;
+        background: none;
+        @include box-shadow(none);
+        padding-bottom: 10px;
+        &:last-child {
+	        margin-bottom: 30px;
+        }
+	}
+	
+	.course-item-inner {
+		height: 100%;
+		border: 1px solid #eee;
+        background: #fff;
+        position: relative;
+        @extend %card-box-shadow;
+        
+	}
+	.course-meta {
+		top: inherit;
+		bottom: 10px;
+		background: #fff;
+	}
+	.course-thumb-holder{
+		width: 100%;
+		position: static;
+		&.hasimage {
+			width: 100%;
+			
+		}
+		&.noimage {
+			position: relative;
+			text-align: center;
+			.material-icons {
+			    position: absolute;
+			    left: 50%;
+			    margin-left: -40px;
+			}
+		}
+	}
+}
+
+.pagelayout-frontpage #region-main>.card.card-block{
+	overflow-x: hidden;
+}
+
+.style-masonry {
+	.theme-course-item {
+		display: inline-block;
+		width: 100%;
+		padding-left: 0;
+		&:last-child {
+	        margin-bottom: 30px;
+        }
+	}
+	.course-meta {
+		top: inherit;
+		bottom: 10px;
+	}
+	.course-thumb-holder{
+		width: 100%;
+		position: static;
+		min-height: 140px;
+		height: auto;
+		&.hasimage {
+			width: 100%;
+			
+		}
+		&.noimage {
+			position: relative;
+			text-align: center;
+			.material-icons {
+			    position: absolute;
+			    left: 50%;
+			    margin-left: -40px;
+			}
+		}
+	}
+}
+
+
+
+/* Owl carousel moodle 3.5+ flex box issue fix (frontpage promo) */
+.owl-carousel .owl-item.active {
+	z-index: 10;
+}
+
+
+/* Moodle 3.5+ new overrides */
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show>.btn-primary.dropdown-toggle {
+	background-color: darken($theme-color-primary, 5%);
+    border-color: darken($theme-color-primary, 5%);
+}
+
+.page-item.active .page-link {
+	background-color: $theme-color-primary;
+	border-color: $theme-color-primary;
+	color: #fff;
+}
+.page-link {
+	color: $theme-color-primary;
+	&:hover {
+		color: darken($theme-color-primary, 5%);
+	}
+	&:focus {
+		@include box-shadow(none);
+	}
+}
+
+.dropdown-item:hover, .dropdown-item:focus, .dropdown-item.active, .dropdown-item:active {
+	background: inherit;
+}
+
+.modal .modal-header .close {
+	right: 10px;
+	top: 10px;
+}
+
+
+/* Moodle course video */
+.mediaplugin_videojs > div {
+	max-width: 100% !important;
+}
+
+/* Global search */
+.page-header .utilities .search-input-wrapper div[role="button"] {
+	padding-top: 0;
+	top: -5px;
+	position: relative;
+}
+
+.search-input-wrapper.expanded {
+	width:300px;
+}
+
+/* RTL support */
+.dir-rtl .promo-section .item-control .play-trigger {
+	padding-right: 0;
+}

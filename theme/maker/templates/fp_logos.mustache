@@ -1,0 +1,32 @@
+{{#uselogos}}
+<div class="logo-section">
+    <div class="container-fluid">
+	    <div class="section-inner">
+		    
+		    {{#logossectiontitle}}
+		    <h2 class="section-title text-center">{{{logossectiontitle}}}</h2>
+		    {{/logossectiontitle}}
+		    
+		    <div class="row"> 
+			    {{#logos}}
+			    {{#haslogo}}
+	            <div class="item col-xl-2 col-lg-4 col-6">
+		            <div class="item-inner">
+			        {{#logourl}}    
+	                <a href="{{{logourl}}}" target="_blank">
+		            {{/logourl}}
+		                {{#logoimage}}
+		                <img class="img-fluid" src="{{{logoimage}}}" {{#logoalt}}alt="{{{logoalt}}}"{{/logoalt}}>
+		                {{/logoimage}}
+		            {{#logourl}}  
+		            </a>
+		            {{/logourl}}
+		            </div><!--//item-inner-->
+	            </div><!--//item-->
+	            {{/haslogo}}
+	            {{/logos}}
+	        </div><!--//row-->	    
+	    </div><!--//section-inner-->
+    </div><!--//container-->
+</div><!--//logo-section-->
+{{/uselogos}}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="384px" height="512px" viewBox="0 0 384 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>edit</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="edit" fill="#616F80" fill-rule="nonzero">
+            <path d="M384,121.9 L384,128 L256,128 L256,0 L262.1,0 C268.5,0 274.6,2.5 279.1,7 L377,105 C381.5,109.5 384,115.6 384,121.9 Z M248,160 L384,160 L384,488 C384,501.3 373.3,512 360,512 L24,512 C10.7,512 0,501.3 0,488 L0,24 C0,10.7 10.7,0 24,0 L224,0 L224,136 C224,149.2 234.8,160 248,160 Z M188.4,269.6 L93.4,364.6 L88,412.8 C87.3,419.2 92.7,424.7 99.2,424 L147.4,418.6 L242.4,323.6 C244.4,321.6 244.4,318.4 242.4,316.4 L195.6,269.6 C193.6,267.6 190.4,267.6 188.4,269.6 Z M298.1,239.3 L272.7,213.9 C264.8,206 252,206 244.1,213.9 L218.1,239.9 C216.1,241.9 216.1,245.1 218.1,247.1 L264.9,293.9 C266.9,295.9 270.1,295.9 272.1,293.9 L298.1,267.9 C306,260 306,247.2 298.1,239.3 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

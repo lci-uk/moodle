@@ -1,0 +1,15 @@
+{{#useheadersocial}}
+<ul class="social-media-list list-inline" >
+	
+	{{#socialmedia}}
+	    {{#haslink}}
+	    <li class="list-inline-item">
+		    <a href="{{{haslink}}}" title = "{{{haslink}}}" alt="{{{haslink}}}" target="_blank">
+			    <i class="fa fa-{{{linkicon}}}" aria-hidden="true"></i>
+			</a>
+		</li>
+		{{/haslink}}
+	{{/socialmedia}}
+	
+</ul><!--//social-media-list-->
+{{/useheadersocial}}

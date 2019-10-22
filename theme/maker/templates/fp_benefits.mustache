@@ -1,0 +1,29 @@
+{{#usebenefits}}
+
+<div class="benefits-section">
+    <div class="container">
+	    <div class="row">
+		    {{#benefits}}
+			    {{#hasbenefit}}
+			    <div class="item col-lg-4 col-12">
+				    <div class="item-inner">
+					    {{#benefiticon}}
+		                <div class="icon-holder text-center">
+		                    <i class="material-icons">{{{benefiticon}}}</i>              
+		                </div><!--//icon-->
+		                {{/benefiticon}}
+		                <div class="item-content text-center">
+		                    <h3 class="item-title">{{{benefittitle}}}</h3>
+		                    {{#benefitcontent}}
+		                    <div class="item-desc">{{{benefitcontent}}}</div>  
+		                    {{/benefitcontent}}
+		                </div><!--//content-->    
+				    </div><!--//item-inner-->           
+	            </div><!--/item-->
+	            {{/hasbenefit}}
+            {{/benefits}}
+	    </div><!--//row-->
+    </div><!--//container-->
+    
+</div><!--//benefits-section-->
+{{/usebenefits}}

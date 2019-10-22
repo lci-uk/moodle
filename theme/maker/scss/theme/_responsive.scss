@@ -1,0 +1,136 @@
+/********* Responsive Rules *********/
+
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+	
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+	.dropdown-menu {
+		//right: 0;
+		//left: auto !important;
+		//margin-top: 11px;
+	}
+	
+	/* Course List style - Masonry */
+	.style-masonry {
+		/*
+	    -webkit-column-count: 3;
+	    -moz-column-count: 3;
+	    column-count: 3;
+	    */
+	    
+	    column-width: 300px;
+	    -moz-column-width: 300px;
+        -webkit-column-width: 300px;
+	    -webkit-column-gap: 1rem;
+	    -moz-column-gap: 1rem;
+	    column-gap: 1rem;
+
+	}
+	
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+	
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+	
+}
+
+
+// Max-width 
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767px) { 
+	
+	.hero-section .headline {
+		font-size: 24px;
+	}
+	
+	.page-header .social-media-list {
+		display: none;
+	}
+	
+	.page-header .utilities .usermenu .usertext {
+		max-width: 120px;
+	}
+	
+	.page-context-header .page-header-image, .page-context-header .page-header-headings {
+		float: none;
+	}
+
+	
+	.cta-section .cta-section-inner {
+		padding: 30px;
+	}
+	
+	.breadcrumb-button {
+		position: static;
+		margin-top: 10px;
+	}
+	
+	.breadcrumb-nav {
+		float: none;
+	}
+	
+	.theme-course-item {
+		padding-left: 0;
+	}
+	
+	.course-thumb-holder {
+		display: none;
+	}
+	
+	.theme-course-item .course-thumb-holder {
+		height: auto;
+	}
+	
+	.theme-course-item .course-content-wrapper  {
+		height: auto;
+	}
+	
+	.path-enrol .course-item-inner .course-content-wrapper {
+		height: auto;
+	}
+	
+	.auth-blocks-wrapper {
+		margin-top: 30px;
+		padding: 15px;
+		.signup-link {
+			position: static;
+			margin-top: 10px;
+		}
+		.instructions {
+			margin-top: 15px;
+		}
+	}
+	
+	.path-enrol .course-item-inner {
+		padding-left: 0;
+		.course-title {
+
+			@include truncate(200px);
+
+		}
+	}
+	
+	
+	
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) { 
+    
+    
+    
+}
