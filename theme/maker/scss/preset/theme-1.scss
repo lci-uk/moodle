@@ -1,0 +1,73 @@
+//REF: https://docs.moodle.org/dev/Boost_Presets
+
+/*************************** Variables section. *****************************/
+// Create variables to override the default value for variables used in the Moodle and Bootstrap SCSS files.
+
+
+/*************************** Import section  *****************************/
+// Always the same.
+// Import FontAwesome.
+@import "../../boost/scss/fontawesome";
+
+// Import All of Bootstrap
+@import "../../boost/scss/bootstrap";
+
+// Import Core moodle CSS
+@import "../../boost/scss/moodle";
+
+
+/*************************** Rules section ****************************/
+/* Theme Colour Custom Settings (defined in settings.php and lib.php) */
+//Blue + Green
+$theme-color-primary: #02AEFF !default; 
+$theme-color-secondary: #5EC877 !default;
+
+/* Theme Colours */
+$theme-color-counter: #f66754;
+$theme-color-new: #5ab66e;
+$theme-text-color-primary: #353E4E;
+$theme-text-color-secondary: #6D727C;
+$theme-text-color-light: #a2a6ad;
+$theme-bgcolor: #eef2f8;
+$theme-border-color:  #e2e2e2;
+$theme-divider-color: #eee;
+$smoky-white: #f5f5f5;
+
+$google-color: #d73d32;
+$facebook-color: #3b5998;
+$microsoft-color: #0067b8;
+$twitter-color: #1da1f2;
+$linkedin-color: #0073b1;
+
+
+
+/*
+//Green + Blue
+$theme-color-primary: #5EC877 !default;
+$theme-color-secondary: #02AEFF !default;
+
+
+//Aqua + Blue
+$theme-color-primary: #66BCBB !default;
+$theme-color-secondary: #4EAAE2 !default;
+
+//Pink + Purple
+$theme-color-primary: #EA5C95 !default;
+$theme-color-secondary: #8185DA !default;
+
+//Purple + Blue
+$theme-color-primary: #9070CB !default;
+$theme-color-secondary: #61B7E5 !default;
+
+//Red + Orange
+$theme-color-primary: #E54D4D !default;
+$theme-color-secondary: #F5906A !default;
+*/
+
+
+
+// Maker styles
+@import "theme/styles";
+
+
+

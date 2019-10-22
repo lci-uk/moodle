@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="480px" height="450px" viewBox="0 0 480 450" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>impress</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="impress" transform="translate(15.000000, 15.000000)" fill="#FFFFFF" fill-rule="nonzero" stroke="#4CAF50" stroke-width="30">
+            <rect id="rect11" x="0" y="0" width="450" height="60"></rect>
+            <polyline id="polyline13" points="30 60 30 330 420 330 420 60"></polyline>
+            <path d="M225,330 L225,420" id="line15"></path>
+            <path d="M180,420 L270,420" id="line17"></path>
+            <path d="M90,135 L240,135" id="line19"></path>
+            <path d="M90,195 L360,195" id="line21"></path>
+            <path d="M90,255 L240,255" id="line23"></path>
+        </g>
+    </g>
+</svg>

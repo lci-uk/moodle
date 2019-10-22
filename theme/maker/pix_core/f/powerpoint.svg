@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="384px" height="512px" viewBox="0 0 384 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>powerpoint</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="powerpoint" fill="#D04424" fill-rule="nonzero">
+            <path d="M193.7,271.2 C202.5,271.2 209.2,273.9 214,279.3 C223.6,290.2 223.8,312 213.8,323.4 C208.9,329 201.9,331.9 192.7,331.9 L165.8,331.9 L165.8,271.2 L193.7,271.2 Z M377,105 L279,7 C274.5,2.5 268.4,0 262,0 L256,0 L256,128 L384,128 L384,121.9 C384,115.6 381.5,109.5 377,105 Z M224,136 L224,0 L24,0 C10.7,0 0,10.7 0,24 L0,488 C0,501.3 10.7,512 24,512 L360,512 C373.3,512 384,501.3 384,488 L384,160 L248,160 C234.8,160 224,149.2 224,136 Z M277,301.2 C277,391.5 188.2,378.8 165.9,378.8 L165.9,436 C165.9,442.6 160.5,448 153.9,448 L123.1,448 C116.5,448 111.1,442.6 111.1,436 L111.1,236.2 C111.1,229.6 116.5,224.2 123.1,224.2 L204.1,224.2 C248.6,224.2 277,257 277,301.2 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

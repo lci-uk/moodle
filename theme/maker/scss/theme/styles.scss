@@ -1,0 +1,38 @@
+/*!
+ * Moodle Theme Maker(https://elearning.3rdwavemedia.com)
+ * Version: v2.1
+ * Author: 3rd Wave Media
+ * Copyright @ 3rd Wave Media Ltd.
+ * License info: (https://elearning.3rdwavemedia.com/licenses)
+ */
+ 
+/*
+/* Maker Custom Settings (defined in settings.php and lib.php) 
+*/
+
+
+$pagefont: "Roboto", "Helvetica Neue", Arial, sans-serif !default;
+$headingfont: "Roboto", "Helvetica Neue", Arial, sans-serif !default;
+$fp-hero-height: 460px !default;
+$fp-block-height: 200px !default;
+$fp-promo-height: 360px !default;
+$fp-testimonial-height: 340px !default;
+$course-header-image-height: 360px !default;
+
+
+@import "mixins";
+@import "base";
+@import "header";
+@import "footer";
+@import "frontpage";
+@import "loginpage";
+@import "modal";
+@import "moodle";
+@import "responsive";
+@import "staticpage";
+@import "courseformat";
+
+
+
+
+

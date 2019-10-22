@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="448px" height="512px" viewBox="0 0 448 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon" fill-rule="nonzero">
+            <path d="M448,360 L448,24 C448,10.7 437.3,0 424,0 L96,0 C43,0 0,43 0,96 L0,416 C0,469 43,512 96,512 L424,512 C437.3,512 448,501.3 448,488 L448,472 C448,464.5 444.5,457.7 439.1,453.3 C434.9,437.9 434.9,394 439.1,378.6 C444.5,374.3 448,367.5 448,360 Z M381.4,448 L96,448 C78.3,448 64,433.7 64,416 C64,398.4 78.4,384 96,384 L381.4,384 C379.5,401.1 379.5,430.9 381.4,448 Z" id="Shape" fill="#616F80"></path>
+            <g id="a-z" transform="translate(76.000000, 92.000000)" fill="#FFFFFF">
+                <path d="M91.8544939,115.472527 L44.8523539,115.472527 L36.64408,142 L0,142 L52.1811699,0 L84.4279603,0 L137,142 L100.160485,142 L91.8544939,115.472527 Z M53.0606278,89.0425822 L83.6462199,89.0425822 L68.3045651,39.7912088 L53.0606278,89.0425822 Z" id="A"></path>
+                <polygon id="z" points="230.063113 210.48244 288 210.48244 288 241 180 241 180 218.933457 236.40914 144.51756 182.4679 144.51756 182.4679 114 286.70729 114 286.70729 135.362292"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

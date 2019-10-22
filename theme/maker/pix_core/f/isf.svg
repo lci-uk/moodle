@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="384px" height="512px" viewBox="0 0 384 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>isf</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="isf" fill-rule="nonzero">
+            <path d="M224,136 L224,0 L24,0 C10.7,0 0,10.7 0,24 L0,488 C0,501.3 10.7,512 24,512 L360,512 C373.3,512 384,501.3 384,488 L384,160 L248,160 C234.8,160 224,149.2 224,136 Z M384,121.9 L384,128 L256,128 L256,0 L262.1,0 C268.5,0 274.6,2.5 279.1,7 L377,105 C381.5,109.5 384,115.6 384,121.9 Z" id="Shape" fill="#FF9800"></path>
+            <polygon id="Path-2" fill="#FFFFFF" points="127.23723 266 136.058456 320.367764 98 345.631101 146.03916 357.15437 158.50227 437 190.92168 373.703746 286.57605 391.979569 215.526107 326.686152 240.477866 266 176.650397 294.64983"></polygon>
+        </g>
+    </g>
+</svg>

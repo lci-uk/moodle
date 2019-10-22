@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="79px" height="79px" viewBox="0 0 79 79" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>play-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="play-icon" fill-rule="nonzero">
+            <circle id="Oval" fill="#010101" opacity="0.5" cx="39.483871" cy="39.483871" r="39.483871"></circle>
+            <path d="M32.0310641,25.097764 L56.6391276,39.3264488 C57.1202908,39.6013992 57.1202908,40.2200377 56.6391276,40.4949881 L32.0310641,54.7236728 C31.5499009,54.9986232 31,54.6549352 31,54.1050343 L31,25.6476649 C31,25.1665016 31.6186385,24.8228136 32.0310641,25.097764 Z" id="Shape" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

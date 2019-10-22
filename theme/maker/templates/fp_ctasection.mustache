@@ -1,0 +1,19 @@
+{{#hasctasection}}
+<div class="cta-section">
+	<div class="container-fluid text-center">
+		<div class="cta-section-inner">
+			{{#ctatitle}}
+			<h2 class="cta-title">{{{ctatitle}}}</h2>
+			{{/ctatitle}}
+			{{#ctacontent}}
+			<div class="cta-content">
+				{{{ctacontent}}}
+			</div><!--//cta-content-->
+			{{/ctacontent}}
+			{{#hasctabutton}}
+			<a class="btn btn-cta theme-btn-secondary" href="{{{ctaurl}}}" {{#urlopennew}}target="_blank"{{/urlopennew}}>{{{ctabutton}}}</a>
+			{{/hasctabutton}}
+		</div><!--//cta-section-inner-->
+	</div><!--//container-fluid-->
+</div><!--//cta-section-->
+{{/hasctasection}}

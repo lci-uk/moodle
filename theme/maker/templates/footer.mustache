@@ -1,0 +1,53 @@
+<footer id="page-footer" class="page-footer">
+	<div class="page-footer-inner">
+	    <div class="container">
+	        <div id="course-footer">{{{ output.course_footer }}}</div>
+	        
+	        {{!--//footer_blocks (theme class function)--}}
+	        {{{ output.footer_blocks}}}
+	        
+	        
+	        {{!--//footer_widget (theme class function)--}}
+	        {{{ output.footer_widget }}}
+	        
+	        
+	        {{!--//footer_socialmedia (theme class function)--}}
+	        {{{ output.footer_socialmedia}}}
+	        
+	        <div class="moodle-links-container">
+
+		
+		        {{{ output.login_info }}}
+		        
+		        <div class="tool_usertours-resettourcontainer"></div>
+		  
+		        <nav class="nav navbar-nav d-block d-lg-none">
+		            {{# output.custom_menu_flat }}
+		                <ul class="list-unstyled p-t-1">
+		                    {{> theme_boost/custom_menu_footer }}
+		                </ul>
+		            {{/ output.custom_menu_flat }}
+		        </nav>
+	        
+	        
+	      
+	             {{{ output.standard_footer_html }}}
+	             
+	        </div><!--//moodle-links-container-->
+	        
+	        {{{ output.standard_end_of_body_html }}}
+	        
+	        
+	    </div>
+	</div>
+	
+	{{# output.footer_copyright }}
+    <div class="footer-bottom-bar">
+	    <small class="copyright">{{{ output.footer_copyright }}}</small>
+    </div>
+    {{/ output.footer_copyright }}
+    
+</footer>
+
+
+
